@@ -1,6 +1,6 @@
 # https://www.systutorials.com/1643/a-simple-makefile-for-latex/
 
-filename1=KevinTurkington_real
+filename1=KevinTurkington_NC
 filename2=KevinTurkington
 
 all:
