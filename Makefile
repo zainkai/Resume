@@ -8,9 +8,9 @@ all:
 	pdflatex ${filename1}.tex
 
 clean:
-	rm -f ${filename2}.pdf
-	rm -f ${filename2}.log
-	rm -f ${filename2}.aux
-	rm -f ${filename1}.pdf
-	rm -f ${filename1}.log
-	rm -f ${filename1}.aux
+	rm -f *.pdf
+	rm -f *.log
+	rm -f *.aux
+	rm -f *.gz
+	rm -f *.fls
+	rm -f *.fdb_latexmk
