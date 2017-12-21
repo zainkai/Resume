@@ -5,7 +5,7 @@ filename2=KevinTurkington
 
 all:
 	pdflatex ${filename2}.tex
-	pdflatex ${filename1}.tex
+#	pdflatex ${filename1}.tex
 
 clean:
 	rm -f *.pdf
