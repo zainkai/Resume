@@ -23,8 +23,10 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
 
 \name{Kevin J. Turkington} % Your name
 
@@ -32,7 +34,11 @@
 
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
 
-\address{(+1)~503~709~4703 \\ TurkingtonKevin@gmail.com \\ www.KevinTurkington.com} % Your phone number and email
+\address{
+  (+1)~503~709~4703
+  \\ \href{mailto:TurkingtonKevin@gmail.com}{TurkingtonKevin@gmail.com} 
+  \\ \href{www.KevinTurkington.com}{www.KevinTurkington.com}
+}
 
 \begin{document}
 
@@ -42,7 +48,7 @@
 
 \begin{rSection}{Experience}
 
-  \begin{rSubsection}{Center for Applied Systems and Software}{March 2016 - Present}{Junior Software Developer}{}
+  \begin{rSubsection}{\href{http://cass.oregonstate.edu/}{Center for Applied Systems and Software}}{March 2016 - Present}{Junior Software Developer}{}
   \item Worked in large development teams as a junior developer on projects for the Oregon  Department of Transportation and Smarter Balanced.
   \end{rSubsection}
 
@@ -72,7 +78,7 @@
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} p{4in} }
 
-  Programming Languages &  C/C\#, Python, TypeScript, HTML, CSS  \\
+  Programming Languages &  C/C\#, Python, TypeScript, HTML, CSS, \LaTeX  \\
 
   Frameworks & React, MVC, ASP.NET, NodeJs \\
 
@@ -92,20 +98,19 @@
 
 \begin{rSection}{Clubs \& Projects}
   
-    
-  \begin{rSubsection} {NASA University Student Launch Initiative} {Fall 2017 - Spring 2018} {Rover Programmer} {}
+  \begin{rSubsection} {\href{http://osuusli.com}{NASA University Student Launch Initiative}} {Fall 2017 - Spring 2018} {Rover Programmer} {}
   \item Designed and programmed the software of the OSU USLI competition rover while conducting educational outreach sessions with local schools and maintained the team website.
   \end{rSubsection}
 
-  \begin{rSubsection} {Smarter Balanced} {Summer 2017 - Present} {Sample Items Website} {}
-  \item Refactored and added features for the Smarter Balanced websites used by 4700 educators and 700,000+ students across the United States to compare individual students' academic performance on a national level.
+  \begin{rSubsection} {\href{http://sampleitems.smarterbalanced.org}{Smarter Balanced Sample Items}} {Summer 2017 - Present} {Sample Items Website} {}
+  \item Refactored, added features, and web accessibility for the Smarter Balanced websites used by 4700 educators and 600,000+ students across the United States to compare individual students' academic performance on a national level.
   \end{rSubsection}
 
   \begin{rSubsection} {Oregon Department of Transportation} {Spring 2016 - Summer 2017} {TOCS Resource Management} {}
   \item Maintained, refactored, and updated the Transportation Operations Center System code base. This system coordinates emergency response teams to decrease response times for accidents and other disasters.
   \end{rSubsection}
 
-  \begin{rSubsection} {SB-components} {Fall 2017} {} {}
+  \begin{rSubsection} {\href{https://www.npmjs.com/package/@osu-cass/sb-components}{SB-components}} {Fall 2017} {} {}
   \item Created react modules for and maintained an NPM downloadable used for controlling and displaying information for the Smarter Balanced Websites.
   \end{rSubsection}
 
@@ -114,6 +119,5 @@
   \end{rSubsection}
 
 \end{rSection}
-
 
 \end{document}
