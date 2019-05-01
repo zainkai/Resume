@@ -1,11 +1,9 @@
 # https://www.systutorials.com/1643/a-simple-makefile-for-latex/
 
-filename1=KevinTurkington_NC
-filename2=KevinTurkington
+filename=KevinTurkington
 
 all:
-	pdflatex ${filename2}.tex
-#	pdflatex ${filename1}.tex
+	pdflatex ${filename}.tex
 
 clean:
 	rm -f *.pdf
@@ -14,3 +12,7 @@ clean:
 	rm -f *.gz
 	rm -f *.fls
 	rm -f *.fdb_latexmk
+
+install:
+	sudo apt-get update
+	sudo apt-get install texlive-full
